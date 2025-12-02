@@ -37,13 +37,6 @@ app.use(session(sessionOptions));
 
 app.use(express.json());
 
-app.use(session({
-  secret: "secret",
-  resave: false,
-  saveUninitialized: false,
-  cookie: { sameSite: "lax" }
-}));
-
 UserRoutes(app, db);
 CourseRoutes(app, db);
 EnrollmentRoutes(app, db);
