@@ -1,47 +1,26 @@
 import { v4 as uuidv4 } from "uuid";
-
 export default function CoursesDao(db) {
-  function findAllCourses() {
-    return db.courses;
+  let { courses, enrollments } = db;
+  const findAllCourses = () => courses;
+  const findCoursesForEnrolledUser = (userId) => {
+    return courses.filter((course) => enrollments.some((enrollment) => enrollment.user === userId && enrollment.course === course._id));
   }
-
-  function findCoursesForEnrolledUser(userId) {
-    const { courses, enrollments } = db;
-    const enrolledCourses = courses.filter((course) =>
-      enrollments.some(
-        (enrollment) =>
-          enrollment.user === userId && enrollment.course === course._id
-      )
-    );
-    return enrolledCourses;
-  }
-
-  function createCourse(course) {
-    const newCourse = { ...course, _id: uuidv4() };
-    db.courses = [...db.courses, newCourse];
+  const createCourse = (course) => {
+    const newCourse = {...course, _id: uuidv4()};
+    courses = [...courses, newCourse];
     return newCourse;
   }
 
-  function updateCourse(courseId, courseUpdates) {
-    db.courses = db.courses.map((course) =>
-      course._id === courseId ? { ...course, ...courseUpdates } : course
-    );
-    return db.courses.find((c) => c._id === courseId);
+  const deleteCourse = (courseId) => {
+    courses = courses.filter((course) => course._id !== courseId);
+    enrollments = enrollments.filter((enrollment) => enrollment.course !== courseId);
   }
 
-  function deleteCourse(courseId) {
-    const { courses, enrollments } = db;
-    db.courses = courses.filter((course) => course._id !== courseId);
-    db.enrollments = enrollments.filter(
-      (enrollment) => enrollment.course !== courseId
-    );
+  const updateCourse = (courseId, courseUpdates) => {
+    const course = courses.find((course) => course._id === courseId);
+    Object.assign(course, courseUpdates);
+    return course;
   }
 
-  return {
-    findAllCourses,
-    findCoursesForEnrolledUser,
-    createCourse,
-    updateCourse,
-    deleteCourse,
-  };
+  return { findAllCourses, findCoursesForEnrolledUser, createCourse, deleteCourse, updateCourse };
 }

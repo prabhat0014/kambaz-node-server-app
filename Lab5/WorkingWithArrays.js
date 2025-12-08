@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 let todos = [
     {id: 1, title: "Task 1", completed: false},
     {id: 2, title: "Task 2", completed: true},
@@ -17,7 +18,7 @@ export default function WorkingWithArrays(app) {
     };
     const createNewTodo = (req, res) => {
         const newTodo = {
-            id: new Date().getTime(),
+            id: uuidv4(),
             title: "New Task",
             completed: false,
         };
@@ -25,7 +26,7 @@ export default function WorkingWithArrays(app) {
         res.json(todos);
     };
     const postNewTodo = (req, res) => {
-        const newTodo = {...req.body, id: new Date().getTime()};
+        const newTodo = {...req.body, id: uuidv4()};
         todos.push(newTodo);
         res.json(todos);
     };
