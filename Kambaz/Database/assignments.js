@@ -6,6 +6,7 @@ export default
     "course": "RS101",
     "dueDate": "2025-05-14T14:00:00",
     "startDate": "2025-05-12T09:00:00",
+    "untilDate": "2025-05-14T09:00:00",
     "points": 100,
     "description": "Analyze the key principles of propulsion and design calculations for a jet engine."
   },
@@ -15,6 +16,7 @@ export default
     "course": "RS101",
     "dueDate": "2025-05-15T23:00:00",
     "startDate": "2025-05-13T10:00:00",
+    "untilDate": "2025-05-15T10:00:00",
     "points": 100,
     "description": "Study the combustion process and assess the efficiency of different fuel types."
   },
@@ -24,6 +26,7 @@ export default
     "course": "RS101",
     "dueDate": "2025-05-12T09:00:00",
     "startDate": "2025-05-10T11:30:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Design and test a nozzle for optimizing thrust in aerospace applications."
   },
@@ -33,6 +36,7 @@ export default
     "course": "RS102",
     "dueDate": "2025-05-14T16:30:00",
     "startDate": "2025-05-12T14:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "A quiz covering fundamental aerodynamic principles and their real-world applications."
   },
@@ -42,6 +46,7 @@ export default
     "course": "RS102",
     "dueDate": "2025-05-15T20:00:00",
     "startDate": "2025-05-13T13:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Study fluid dynamics and analyze the behavior of air over different surfaces."
   },
@@ -51,6 +56,7 @@ export default
     "course": "RS102",
     "dueDate": "2025-05-13T10:30:00",
     "startDate": "2025-05-11T09:30:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Examine heat transfer processes and their application in various engineering fields."
   },
@@ -60,6 +66,7 @@ export default
     "course": "RS103",
     "dueDate": "2025-05-12T15:00:00",
     "startDate": "2025-05-10T10:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Design and analyze the structural integrity of materials under stress."
   },
@@ -69,6 +76,7 @@ export default
     "course": "RS103",
     "dueDate": "2025-05-14T17:00:00",
     "startDate": "2025-05-12T12:30:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Apply Kepler’s laws to calculate the orbits of satellites and other celestial bodies."
   },
@@ -78,6 +86,7 @@ export default
     "course": "RS103",
     "dueDate": "2025-05-13T12:00:00",
     "startDate": "2025-05-11T14:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Test your understanding of systems engineering, including optimization and integration."
   },
@@ -87,6 +96,7 @@ export default
     "course": "RS104",
     "dueDate": "2025-05-14T23:00:00",
     "startDate": "2025-05-12T08:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Identify and categorize various hydrocarbons used in chemical reactions."
   },
@@ -96,6 +106,7 @@ export default
     "course": "RS104",
     "dueDate": "2025-05-12T19:00:00",
     "startDate": "2025-05-10T15:30:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Study the principles and applications of spectroscopy for chemical analysis."
   },
@@ -105,6 +116,7 @@ export default
     "course": "RS104",
     "dueDate": "2025-05-15T09:30:00",
     "startDate": "2025-05-13T12:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Explore various synthesis reactions and their importance in industrial chemistry."
   },
@@ -114,6 +126,7 @@ export default
     "course": "RS105",
     "dueDate": "2025-05-12T17:00:00",
     "startDate": "2025-05-10T16:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Study the crystal field theory to understand the behavior of transition metal complexes."
   },
@@ -123,6 +136,7 @@ export default
     "course": "RS105",
     "dueDate": "2025-05-14T14:00:00",
     "startDate": "2025-05-12T13:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Identify and characterize metal complexes using various chemical methods."
   },
@@ -132,6 +146,7 @@ export default
     "course": "RS105",
     "dueDate": "2025-05-13T11:30:00",
     "startDate": "2025-05-11T10:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Explore the different mechanisms of catalysis in chemical reactions and their applications."
   },
@@ -141,6 +156,7 @@ export default
     "course": "RS106",
     "dueDate": "2025-05-13T13:00:00",
     "startDate": "2025-05-11T12:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Analyze the thermodynamic principles governing chemical reactions and energy changes."
   },
@@ -150,6 +166,7 @@ export default
     "course": "RS106",
     "dueDate": "2025-05-15T10:00:00",
     "startDate": "2025-05-13T14:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Apply quantum mechanics to understand atomic and molecular behavior in different scenarios."
   },
@@ -159,6 +176,7 @@ export default
     "course": "RS106",
     "dueDate": "2025-05-14T18:00:00",
     "startDate": "2025-05-12T15:30:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Study the rates of molecular reactions and their dependency on various factors."
   },
@@ -168,6 +186,7 @@ export default
     "course": "RS107",
     "dueDate": "2025-05-15T16:00:00",
     "startDate": "2025-05-13T13:30:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Test your knowledge of Sindarin grammar rules and sentence structure."
   },
@@ -177,6 +196,7 @@ export default
     "course": "RS107",
     "dueDate": "2025-05-12T15:30:00",
     "startDate": "2025-05-10T13:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Analyze the structure and nuances of the ancient Khuzdul script."
   },
@@ -186,6 +206,7 @@ export default
     "course": "RS107",
     "dueDate": "2025-05-14T09:00:00",
     "startDate": "2025-05-12T18:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Study the development of languages in Middle-earth, focusing on cultural and phonetic evolution."
   },
@@ -195,6 +216,7 @@ export default
     "course": "RS108",
     "dueDate": "2025-05-12T14:30:00",
     "startDate": "2025-05-10T09:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Analyze the diplomatic and strategic decisions made during the Council of Elrond meeting."
   },
@@ -204,6 +226,7 @@ export default
     "course": "RS108",
     "dueDate": "2025-05-15T20:00:00",
     "startDate": "2025-05-13T10:30:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Examine alliances, treaties, and conflicts among races and kingdoms of Middle-earth."
   },
@@ -213,6 +236,7 @@ export default
     "course": "RS108",
     "dueDate": "2025-05-13T19:30:00",
     "startDate": "2025-05-11T13:00:00",
+    "untilDate": "2025-05-13T10:00:00",
     "points": 100,
     "description": "Assess key battles, leadership strategies, and outcomes of the War of the Ring."
   }
