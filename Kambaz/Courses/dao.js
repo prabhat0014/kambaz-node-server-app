@@ -3,13 +3,13 @@ import model from "./model.js";
 
 export default function CoursesDao(db) {
   const findAllCourses = () => {
-    return model.find();
+    return model.find({}, {name: 1, description: 1});
   };
 
   const findCoursesForEnrolledUser = async (userId) => {
     let {enrollments} = db;
 
-    const courses = await model.find();
+    const courses = await model.find({}, {name: 1, description: 1});
     const enrolledCourses = courses.filter((course) => enrollments.some((enrollment) => enrollment.user == userId && enrollment.course === course._id));
     return enrolledCourses;
   }
