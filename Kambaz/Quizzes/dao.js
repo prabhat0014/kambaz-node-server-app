@@ -4,7 +4,6 @@ import {QuizzesModel, QuestionsModel, AttemptedModel} from "./model.js";
 export default function QuizzesDao() {
     
     const findQuizzesForCourse = async (courseId) => {
-        console.log("here in dao courseId: ", courseId);
         const quizzes = await QuizzesModel.find({course: courseId});
         return quizzes;
     }
@@ -33,7 +32,41 @@ export default function QuizzesDao() {
 
     const findQuizById = async (quizId) => {
         const quiz = await QuizzesModel.findById(quizId);
+        return quiz;
     }
+
+    const findQuestionsForQuiz = async (quizId) => {
+        const questions = await QuestionsModel.find({ quiz: quizId });
+        return questions
+    }
+
+    const createQuestion = (question) => {
+        delete question._id;
+        return QuestionsModel.create(newQuestion);
+    };
+
+    const deleteQuestion = async (questionId) => {
+        await QuestionsModel.deleteOne({ _id: questionId });
+    }
+
+    const updateQuestion = (questionId, questionUpdates) => {
+        QuestionsModel.updateOne({ _id: questionId }, { $set: questionUpdates });
+    }
+
+    const findAttemptsForQuiz = async (quizId, userId) => {
+        const attempts = await AttemptedModel.find({ quiz: quizId, user: userId });
+        return attempts;
+    }
+
+    const createAttempt = (attempt) => {
+        delete attempt._id;
+        return AttemptedModel.create(attempt);
+    };
+
+    const findLatestAttempt = async (quizId, userId) => {
+        const attempts = await AttemptedModel.find({ quiz: quizId, user: userId }).sort({ attempt: -1 }).limit(1);
+        return attempts[0];
+    };
 
     return {
         findQuizzesForCourse,
@@ -42,5 +75,12 @@ export default function QuizzesDao() {
         updateQuiz,
         publishQuiz,
         findQuizById,
+        findQuestionsForQuiz,
+        createQuestion,
+        deleteQuestion,
+        updateQuestion,
+        findAttemptsForQuiz,
+        createAttempt,
+        findLatestAttempt,
     }
 }

@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 const quizzesSchema = new mongoose.Schema({
+    _id: String,
     title: String,
     course: { type: String, ref: "CourseModel" },
     quizType: String,
